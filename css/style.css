@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(255, 196, 0);
+    --overlay: rgba(0, 0, 0, 0.6)
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    display: block;
+    padding: 2rem;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    background-color: var(--secondary-color);
+    justify-content: flex-end;
+}
+
+#navbar ul li {
+    padding: 1rem;
+}
+
+#navbar ul li a {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+#navbar ul li:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+#navbar ul li:hover a {
+    color: #fff;
+}
+
+#welcome-section {
+    height: 600px;
+    text-align: center;
+    background: url('../img/Aqua-07-2.3.001-bigpicture_07_3.jpg') no-repeat center center/cover fixed;
+}
+
+#welcome-section h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+#welcome-section h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.ws-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    background-color: var(--overlay);
+}
+
+
+/* projects */
+
+#projects {
+    background-color: var(--secondary-color);
+    text-align: center;
+    color: #fff;
+}
+
+#projects .project-title {
+    padding-bottom: 1.5rem;
+    font-size: 1.7rem;
+}
+
+#projects .project-tile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .project-tile .project {
+    width: 300px;
+    height: auto;
+    margin: 2rem;
+    background-color: rgb(12, 12, 12);
+    box-shadow: 2px 3px 4px #000;
+}
+
+#projects .project-tile .project img {
+    width: 100%;
+}
+
+#projects .project-tile .project p {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+#contact {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+}
+
+#contact .contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+#contact .contact-content h1 {
+    padding-bottom: 0.3rem;
+    font-size: 3rem;
+}
+
+#contact .contact-content p {
+    text-decoration: italic;
+    font-size: 1.5rem;
+}
+
+#contact .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    margin: none;
+    padding: none;
+    flex-wrap: wrap;
+}
+
+#contact .social-media p {
+    padding: 1rem;
+}
+
+#contact .social-media p a {
+    color: #fff;
+}
+
+#contact .social-media p:hover {
+    color: rgb(185, 185, 185);
+}
+
+#contact .social-media p:hover a {
+    color: rgb(185, 185, 185);
+}
+
+#contact .social-media p:hover i {
+    color: rgb(185, 185, 185);
+}
+
+@media(max-width:700px) {
+    #projects .project-tile {
+        flex-direction: column;
+        margin-left: 0 auto;
+    }
+}
